@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "693894249062",
+    "project_id": "gotcha-9af33",
+    "storage_bucket": "gotcha-9af33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693894249062:android:57be6a17739476c2494ba7",
+        "android_client_info": {
+          "package_name": "com.example.gotcha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "693894249062-bl2c6lbndmc7hug9n8i78c6c6s2ue8qg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn6RAZC2krTUxIS2Kk7Gdzt0DJxHXccfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "693894249062-bl2c6lbndmc7hug9n8i78c6c6s2ue8qg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

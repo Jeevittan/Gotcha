@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alegreya_sans_sc_medium_italic</item>
+        <item>@font/allerta</item>
+        <item>@font/amiko_semibold</item>
+        <item>@font/amita_bold</item>
+        <item>@font/antic</item>
+        <item>@font/anton</item>
+        <item>@font/archivo_black</item>
+        <item>@font/arimo_bold_italic</item>
+        <item>@font/arimo_italic</item>
+        <item>@font/bangers</item>
+        <item>@font/bungee</item>
+        <item>@font/candal</item>
+        <item>@font/faster_one</item>
+        <item>@font/jolly_lodger</item>
+        <item>@font/nova_flat</item>
+    </array>
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffff0"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <Button
+        android:id="@+id/backlog"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="15dp"
+        android:background="#00000012"
+        android:elevation="0dp"
+        android:fontFamily="@font/nova_flat"
+        android:text="Back"
+        android:inputType="text"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:transitionName="logo_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleX="1.4"
+        android:scaleY="1.4"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:fontFamily="@font/bungee"
+        android:textColor="#000000"
+        android:text="Hello there, Welcome Back"
+        android:transitionName="logo_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/slogan_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/antic"
+        android:text="Enter your master password to continue"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/email"
+            app:expandedHintEnabled="true"
+            android:hint="     Email Address"
+            android:textColorHint="#929296"
+            app:passwordToggleTint="@color/black"
+            app:boxStrokeColor="#6200EE"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:inputType="textEmailAddress"
+                android:id="@+id/emailid"
+                android:textColor="#000"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            app:expandedHintEnabled="true"
+            android:hint="     Master Password"
+            android:textColorHint="#929296"
+            app:passwordToggleTint="@color/black"
+            app:passwordToggleEnabled="true"
+            app:boxStrokeColor="#6200EE"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:inputType="textPassword"
+                android:id="@+id/Mpassword"
+                android:textColor="#000"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:elevation="0dp"
+            android:background="#000f"
+            android:text="Forget Password?"
+            android:id="@+id/pass"
+            android:textAlignment="viewStart"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:textColor="#161616" /></LinearLayout>
+
+        <Button
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#66b8ff"
+            android:elevation="0dp"
+            android:id="@+id/login"
+            android:text="Gotcha"
+            android:textAlignment="center"
+            android:textColor="#161616"
+            app:backgroundTint="#81D4FA"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+
+</LinearLayout>

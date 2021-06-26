@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_register"
+    android:background="#fffff0"
+    android:orientation="vertical">
+
+<Button
+    android:id="@+id/backreg"
+    android:layout_width="100dp"
+    android:layout_height="40dp"
+    android:layout_gravity="top"
+    android:layout_marginTop="15dp"
+    android:background="#00000012"
+    android:elevation="0dp"
+    android:fontFamily="@font/nova_flat"
+    android:text="Back"
+    android:inputType="text"
+    android:textAllCaps="false"
+    android:textColor="#000000"
+    android:textSize="18dp" />
+
+
+
+    <TextView
+        android:layout_width="369dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bungee"
+        android:text="Create Your Account!"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:transitionName="logo_text" />
+
+
+
+
+<TextView
+    android:id="@+id/slogan_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/antic"
+    android:text="Enter your credentials"
+    android:layout_marginLeft="15dp"
+    android:textSize="18sp"
+    android:textColor="#000000"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/email"
+        app:expandedHintEnabled="true"
+        android:hint="     Email Address"
+        android:textColorHint="#929296"
+        app:passwordToggleTint="@color/black"
+        app:boxStrokeColor="#6200EE"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/emailAd"
+            android:textColor="#000"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        app:expandedHintEnabled="true"
+        android:hint="     Master Password"
+        android:textColorHint="#929296"
+        app:passwordToggleTint="@color/black"
+        app:passwordToggleEnabled="true"
+        app:boxStrokeColor="#6200EE"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:inputType="textPassword"
+            android:id="@+id/Regpassword"
+            android:textColor="#000"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/passworddesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/arimo_bold_italic"
+        android:text="Use 8 or more characters with a mix of lowercase and uppercase letters, numbers, symbols"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/repassword"
+        app:expandedHintEnabled="true"
+        android:hint="     Re-type Master Password"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#929296"
+        app:passwordToggleTint="@color/black"
+        app:passwordToggleEnabled="true"
+        app:boxStrokeColor="#6200EE"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:inputType="textPassword"
+            android:id="@+id/Regpassword2"
+            android:textColor="#000"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phonenumber"
+        app:expandedHintEnabled="true"
+        android:hint="     Phone Number"
+        android:layout_marginTop="15dp"
+        android:textColorHint="#929296"
+        app:boxStrokeColor="#6200EE"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:inputType="phone"
+            android:id="@+id/hpno"
+            android:textColor="#000"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/PhoneNodesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/arimo_bold_italic"
+        android:text="ex: 016xxxxxxx (no space/Dash)"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+    </LinearLayout>
+
+<Button
+    android:layout_width="375dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#66b8ff"
+    android:elevation="0dp"
+    android:id="@+id/register"
+    android:text="Gotcha"
+    android:textAlignment="center"
+    android:textColor="#161616"
+    app:backgroundTint="#81D4FA"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"/>
+
+    <ProgressBar
+        android:id="@+id/loadingreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+
+
+</LinearLayout>
