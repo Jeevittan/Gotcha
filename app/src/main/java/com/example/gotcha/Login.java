@@ -44,7 +44,8 @@ import java.util.Map;
 import static android.content.ContentValues.TAG;
 
 public class Login extends AppCompatActivity {
-    String PhoneNo="+60166572174";
+    String PhoneNo;
+    //String PhoneNo="+60166572174";  use this number to test OTP = 123456
     EditText emailId,Password;
     Button login,forgotpass;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -61,6 +62,7 @@ public class Login extends AppCompatActivity {
         Password = findViewById(R.id.Mpassword);
         login = findViewById(R.id.login);
         forgotpass = findViewById(R.id.pass);
+        PhoneNo = "+60166572174";
 
 
         forgotpass.setOnClickListener(new View.OnClickListener() {
